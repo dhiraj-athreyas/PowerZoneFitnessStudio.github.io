@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="logincss.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container" id="LoginReg" data-aos="slide-down">
+ 	<div class="header">
+		
+			
+	
+ 		<h1 style="color: slategray;" >Login</h1>
+ 	</div>
+ 	<div class="main">
+ 		<form id="LoginForm">
+ 			<span>
+ 				<i class="fa fa-user"></i>
+ 				<input type="text" id="Uname" placeholder="Username" name="">
+ 			</span><br>
+ 			<span>
+ 				<i class="fa fa-lock"></i>
+ 				<input type="password" id="password" placeholder="password" name="">
+ 			</span><br>
+ 				<button type="submit">login</button> 
+			<div>
+				<br><a href="registation.html" style="text-align: left ; color: white;text-decoration: none;"> Registration </a>
+			</div>
+			<div>
+				<br><a href="index.html" style="text-align: left ; color: white;text-decoration: none;"> Back to Home</a>
+			</div>
+ 		</form>
+ 	</div>
+ </div>
+ <script src="Loginscript.js"></script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+	 AOS.init({
+		 duration: 2000,
+		 once: false,
+	 });
+   </script>
+</body>
+</html>

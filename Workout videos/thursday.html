@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Videos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming your CSS is in a file named styles.css -->
+    <style>
+        /* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+/* Style for the video container */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.body-part{
+    margin: auto;
+    text-align: center;
+}
+
+/* Style for each video */
+.video {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Add a border to the video for separation */
+    border-radius: 5px; /* Add rounded corners to the video */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+/* Style for the navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Style for the left side of the navigation bar */
+.navbar-left {
+    flex: 1;
+    padding-left: 10px; /* Take up available space on the left */
+}
+
+/* Style for the right side of the navigation bar */
+.navbar-right {
+    flex: 1; /* Take up available space on the right */
+    text-align: right; /* Align button to the right */
+}
+
+/* Style for the button inside the navbar-right div */
+.navbar-right button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Set a pleasant background color and font for the whole page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(Squat\ 1.jpg);
+    background-size: cover;
+    
+}
+
+/* Create a container to center your content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style headings with different sizes and colors */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style paragraphs with a pleasant line height and margin */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Add a subtle box shadow to elements on hover */
+a:hover, button:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style buttons with a gradient background and rounded corners */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style links with a different color and underline on hover */
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+
+
+
+/* Style a footer with a different background color */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add a subtle border to images */
+img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Apply responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+    </style>
+
+
+<script>
+    function redirectToPage() {
+      window.location.href = "../after_login.html";
+    }
+</script>
+
+
+</head>
+<body class="main-display">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <p style="font-size: 40px;">Thursday</p>
+        </div>
+        <div class="navbar-right">
+            <button onClick="redirectToPage()">Back</button>
+        </div>
+    </nav>
+    <div class="video-container">
+        <h2 class="body-part" style="color: #ddd;">Lets work on Legs</h2>
+
+        <!-- Video 1: Squats -->
+        <h2 style="color: #ddd;">1. Squat</h2>
+        <video class="video" controls>
+            <source src="Squats.mp4" type="video/mp4"><br>
+            
+            Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; font-weight: bold; color:#f4f4f4;">Squats are a fundamental strength exercise, targeting the lower body. <br>
+            By bending at the knees and hips, squats engage the quadriceps, hamstrings, and glutes, promoting muscle growth and improved functional fitness. <br>
+            They are a versatile and effective workout for building leg strength and enhancing overall athletic performance.</p>
+
+        <!-- Video 2: Lunges -->
+        <h2 style="color: #ddd;">2. Lunges</h2>
+        <video class="video" controls>
+            <source src="Lunges.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; font-weight: bold; color: #ddd;">Lunges are a dynamic lower-body exercise where you step forward or backward and bend both knees,<br> 
+            creating a deep stretch in your hip and knee joints.<br> 
+            They effectively target the quadriceps, hamstrings, and glutes, helping to build strength and improve lower-body stability.</p>
+
+        <!-- Video 3: Leg Extensions -->
+        <h2 style="color: #ddd;">3. Leg extensions</h2>
+        <video class="video" controls>
+            <source src="Extensions.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; font-weight: bold; color: #ddd;">An effective workout that involves lifting your own body weight.<br> 
+            This exercise helps build chest strength and definition.<br> 
+            While also engaging the triceps and shoulders for a well-rounded upper body workout.</p>
+    </div>
+</body>
+</html>

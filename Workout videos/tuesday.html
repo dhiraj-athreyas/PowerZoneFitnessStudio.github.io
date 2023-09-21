@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Videos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming your CSS is in a file named styles.css -->
+    <style>
+        /* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+/* Style for the video container */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.body-part{
+    margin: auto;
+    text-align: center;
+}
+
+/* Style for each video */
+.video {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Add a border to the video for separation */
+    border-radius: 5px; /* Add rounded corners to the video */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+/* Style for the navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Style for the left side of the navigation bar */
+.navbar-left {
+    flex: 1;
+    padding-left: 10px; /* Take up available space on the left */
+}
+
+/* Style for the right side of the navigation bar */
+.navbar-right {
+    flex: 1; /* Take up available space on the right */
+    text-align: right; /* Align button to the right */
+}
+
+/* Style for the button inside the navbar-right div */
+.navbar-right button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Set a pleasant background color and font for the whole page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(Back.jpg);
+    background-size: cover;
+    
+}
+
+/* Create a container to center your content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style headings with different sizes and colors */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style paragraphs with a pleasant line height and margin */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Add a subtle box shadow to elements on hover */
+a:hover, button:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style buttons with a gradient background and rounded corners */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style links with a different color and underline on hover */
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+
+
+
+/* Style a footer with a different background color */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add a subtle border to images */
+img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Apply responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+    </style>
+
+
+<script>
+    function redirectToPage() {
+      window.location.href = "../after_login.html";
+    }
+</script>
+
+
+</head>
+
+
+<body class="main-display">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <p style="font-size: 40px;">Tuesday</p>
+        </div>
+        <div class="navbar-right">
+            <button onClick="redirectToPage()">Back</button>
+        </div>
+    </nav>
+    <div class="video-container">
+        <h2 class="body-part" style="color: #222;">Lets work on back</h2>
+
+        <!-- Video 1: Pull ups -->
+        <h2 style="color:#222;">1. Pull ups</h2>
+        <video class="video" controls>
+            <source src="Pullups.mp4" type="video/mp4"><br>
+            
+            Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; font-weight: bold; color:#222;">Pull-ups are a highly effective upper-body exercise that involves gripping an overhead bar <br>
+             and lifting your body upward until your chin reaches or surpasses the bar.<br> 
+            They target the back, shoulders, and arms, building strength and enhancing overall fitness.</p>
+
+        <!-- Video 2: Deadlifts -->
+        <h2 style="color:#222;">2. Deadlifts</h2>
+        <video class="video" controls>
+            <source src="Deadlift.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; font-weight: bold; color:#222;">The deadlift is a foundational strength exercise in which <br>
+            a person lifts a loaded barbell or weight from the ground to a standing position. <br>
+            It targets multiple muscle groups, including the back, legs, and core, making it an essential compound movement in strength training. </p>
+
+        <!-- Video 3: Barbell rows -->
+        <h2 style="color:#222;">3. Barbell Rows</h2>
+        <video class="video" controls>
+            <source src="Barbellrow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; font-weight: bold; color:#222;">Barbell rows are a compound strength exercise that targets the upper back and lats.<br>
+             By lifting a barbell from a bent-over position, they help build a powerful and well-defined back while improving overall posture and grip strength.</p>
+    </div>
+</body>
+</html>
